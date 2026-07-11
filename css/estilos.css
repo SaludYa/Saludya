@@ -1,0 +1,914 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc; 
+    color: #334155; 
+}
+
+/* HEADER (ENCABEZADO) */
+header {
+    background: #0B7A75;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 26px; 
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 22px;
+}
+
+nav a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500; 
+    font-size: 15px; 
+    letter-spacing: 0.3px;
+    transition: .3s ease;
+}
+
+nav a:hover {
+    color: #FFD54F;
+}
+
+/* SECCIÓN HERO (BIENVENIDA) */
+.hero-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 50px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.01);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-content h2 {
+    font-family: 'Inter', sans-serif;
+    color: #0B7A75;
+    font-size: 32px; 
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.resaltado-ya {
+    color: #ff9800;
+}
+
+.hero-content p {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    font-size: 16px; 
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+.hero-banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-banner img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(11, 122, 117, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.hero-banner img:hover {
+    transform: translateY(-4px);
+}
+
+/* BOTONES */
+.boton {
+    font-family: 'Inter', sans-serif;
+    background: #0B7A75;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    transition: .3s;
+    box-shadow: 0 4px 12px rgba(11, 122, 117, 0.25);
+}
+
+.boton:hover {
+    background: #ff9800;
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+/* ELEVATOR PITCH */
+.pitch {
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.pitch h2 {
+    font-family: 'Inter', sans-serif;
+    color: #0B7A75;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.pitch p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.video-contenedor {
+    width: 100%;
+    max-width: 480px; 
+    margin: 25px auto 0 auto;
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+}
+
+.video-contenedor video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* BANNER DE PROMOCIÓN */
+.promo {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto 20px auto;
+    background: #E8F5E9;
+    padding: 40px;
+    border-left: 6px solid #4CAF50;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.promo h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #2E7D32;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.promo h3 {
+    font-family: 'Inter', sans-serif;
+    color: #ff9800;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.promo p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15.5px;
+    color: #475569;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* FOOTER (PIE DE PÁGINA) */
+footer {
+    margin-top: 50px;
+    background: #0B7A75;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ==========================================
+   ESTILOS PARA LA PÁGINA DE NOSOTROS
+   ========================================== */
+.seccion-nosotros {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-pagina h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #0B7A75;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.titulo-pagina p {
+    font-family: 'Inter', sans-serif;
+    color: #64748b;
+    font-size: 16.5px;
+}
+
+/* HISTORIA */
+.bloque-historia {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    margin-bottom: 30px;
+}
+
+.bloque-historia h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0B7A75;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.bloque-historia p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.bloque-historia p:last-child {
+    margin-bottom: 0;
+}
+
+/* MISIÓN Y VISIÓN (2 COLUMNAS) */
+.mision-vision-container {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.caja-mv {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.caja-mv h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #ff9800;
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.caja-mv p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #475569;
+}
+
+/* VALORES */
+.bloque-valores {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    text-align: center;
+}
+
+.bloque-valores h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0B7A75;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 20px;
+}
+
+.tarjeta-valor {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid #0B7A75;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-valor:hover {
+    transform: translateY(-3px);
+}
+
+.tarjeta-valor h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #0B7A75;
+    font-size: 17px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.tarjeta-valor p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+/* ==========================================
+   ESTILOS PARA LA PÁGINA DE SERVICIOS
+   ========================================== */
+.seccion-servicios {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+.tarjeta-servicio {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border-top: 5px solid #0B7A75;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icono-servicio {
+    font-size: 45px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.tarjeta-servicio h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0B7A75;
+    font-size: 21px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tarjeta-servicio p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #475569;
+    text-align: justify;
+}
+
+/* MEDIA QUERIES GENERALES (RESPONSIVO) */
+@media(max-width:768px){
+    .contenedor { flex-direction: column; padding: 15px 0; }
+    .logo { flex-direction: column; text-align: center; }
+    .logo img { width: 85px; margin: 0 0 10px; }
+    .logo h1 { font-size: 26px; }
+    nav ul { flex-direction: column; margin-top: 15px; text-align: center; }
+    nav li { margin: 8px 0; }
+    .hero-container { flex-direction: column; text-align: center; gap: 30px; }
+    .hero-content { text-align: center; }
+    .hero-content h2 { font-size: 26px; }
+    .hero-banner img { max-width: 260px; }
+    .mision-vision-container { flex-direction: column; }
+    .seccion-nosotros { margin: 25px auto; }
+    .servicios-grid { grid-template-columns: 1fr; }
+    .tarjeta-servicio { padding: 25px 20px; }
+}
+/* Contenedor de servicios */
+.services-container { padding: 50px 10%; text-align: center; }
+
+.services-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    margin-top: 30px; 
+}
+
+.servicio-card { 
+    padding: 30px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    background: #f9f9f9; 
+    transition: 0.3s; 
+}
+
+.servicio-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    border-color: #006666; /* El color de tu logo */
+}
+/* Asegura que la caja blanca tenga sombra y fondo */
+.card-content {
+    display: flex;            /* Esto es lo que los pone en fila */
+    justify-content: space-between;
+    gap: 20px;
+    background: #ffffff;      /* Fondo blanco */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Define el tamaño de cada columna */
+.servicio-item {
+    flex: 1;
+    text-align: center;
+}
+/* ==========================================
+   CORRECCIÓN DE COLORES PARA SERVICIOS
+   ========================================== */
+
+/* Color para los títulos de cada servicio dentro de la caja blanca */
+.servicio-item h3 {
+    color: #0B7A75;         /* Usamos el verde de tu logo para mantener consistencia */
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif; /* Mantiene la coherencia con tus otros títulos */
+}
+
+/* Color para los párrafos de cada servicio */
+.servicio-item p {
+    color: #475569;         /* Gris oscuro profesional, excelente para lectura */
+    line-height: 1.7;       /* Espaciado cómodo */
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+}
+.icono-img {
+    width: 300px;          /* Ajusta este tamaño según prefieras */
+    height: auto;
+    margin-top: 15px;     /* Separa la imagen del texto */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   /* Esto centra la imagen horizontalmente */
+}
+.banner-descuento {
+    width: 90%;          /* Ocupa el 90% del ancho de la página */
+    max-width: 400px;    /* <-- Ajusta este número para que sea más grande o más pequeña */
+    margin: 40px auto;
+    text-align: center;
+}
+
+.banner-descuento img {
+    width: 100%;         /* La imagen se ajustará automáticamente al ancho del contenedor anterior */
+    height: auto;
+    border-radius: 12px;
+}
+.video-gallery {
+    display: flex;             /* Pone los videos en fila */
+    justify-content: center;   /* Los centra en la página */
+    gap: 20px;                 /* Espacio entre cada video */
+    padding: 40px 10%;
+    flex-wrap: wrap;           /* Para que se acomoden bien en celulares */
+}
+
+.video-item {
+    flex: 1;                   /* Cada video toma el mismo ancho */
+    min-width: 300px;          /* Asegura que no se aplasten demasiado */
+}
+
+.video-item video {
+    width: 100%;               /* Asegura que ocupen todo el ancho disponible */
+    height: 200px;             /* Define una altura fija para todos */
+    object-fit: cover;         /* Esto es la clave: recorta el video para que llene el espacio sin deformarse */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: block;
+}
+.video-titulo {
+    text-align: center;     /* Centra el título */
+    margin-top: 50px;       /* Espacio superior */
+    margin-bottom: 25px;    /* Espacio inferior para separarlo de los videos */
+}
+
+.video-titulo h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0B7A75;         /* El color verde/azul de tu marca */
+    font-size: 28px;
+    font-weight: 700;
+}
+.titulo-extras {
+    text-align: center;
+    margin-top: 60px;   /* Espacio para que no se pegue al banner de descuento */
+    margin-bottom: 30px;
+}
+
+.titulo-extras h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0B7A75;     /* El color verde de Salud Ya */
+    font-size: 28px;
+    font-weight: 100;
+}
+/* ==========================================
+   ESTILOS PARA LOS ANUNCIOS / SERVICIOS EXTRAS
+   ========================================== */
+.anuncios-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 10% 40px 10%;
+    flex-wrap: wrap; /* Para que en celulares se pongan uno abajo del otro */
+}
+
+.banner-promo {
+    flex: 1;
+    min-width: 280px;      /* Evita que las tarjetas se aplasten */
+    max-width: 360px;      /* Controla el ancho máximo de cada anuncio */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 4px solid #0B7A75; /* Detalle con el color de tu logo */
+}
+
+.banner-promo img {
+    width: 100%;           /* Ocupa todo el ancho de la tarjeta */
+    height: 180px;         /* <-- ESTO AJUSTA EL TAMAÑO: Altura fija para que los 3 banners midan lo mismo */
+    object-fit: contain;     /* Recorta y acomoda la imagen perfectamente sin deformarla */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.banner-promo h3 {
+    color: #0B7A75;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.banner-promo p {
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+/* ==========================================
+   ESTILOS PARA EL PORTAFOLIO
+   ========================================== */
+
+/* Contenedor principal que organiza las tarjetas en cuadrícula */
+.portafolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 40px 10%;
+}
+.titulo-pagina {
+    margin-top: 40px;  /* Ajusta este valor según cuánto espacio quieras */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Tarjeta individual del proyecto */
+.proyecto-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.proyecto-card h3 {
+    color: #0B7A75;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+/* Sección de descripción y resultados */
+.proyecto-info {
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resultados-box {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.titulo-resultados {
+    color: #0B7A75;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #0B7A75;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.resultados-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resultados-box li {
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+/* Caja de tecnologías */
+.tech-box {
+    background: #e0f2f1;
+    color: #064e3b;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    border: 1px solid #b2dfdb;
+}
+.proyecto-card img {
+    width: 100%;
+    height: 180px;        /* Altura fija para que todas las tarjetas sean iguales */
+    object-fit: contain;  /* Esto hace que la imagen completa quepa en el espacio sin recortarse */
+    background-color: #ffffff; /* Fondo blanco para que no se vea extraño si sobra espacio */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Primero, asegúrate de que el texto de la tarjeta esté alineado a la izquierda */
+.proyecto-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: left; /* <-- CAMBIA ESTO A 'left' */
+}
+
+/* Luego, configura la imagen específicamente para que se alinee a la izquierda */
+.proyecto-card img {
+    display: block;   /* Necesario para que las propiedades de margen funcionen */
+    margin-left: 0;   /* Fuerza el margen izquierdo a 0 */
+    margin-right: auto; /* Empuja el resto del espacio a la derecha */
+    width: 150px;      /* Puedes poner un ancho específico si no quieres que ocupe todo el ancho */
+    height: auto;      /* Mantiene la proporción */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.video-proyecto {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.video-proyecto video {
+    width: 60%;           /* Ocupa todo el ancho de la tarjeta */
+    height: 180px;         /* <-- ESTO AJUSTA EL TAMAÑO */
+    object-fit: contain;     /* Recorta el video para que llene el espacio sin deformarse */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: block;
+}
+/* Título centrado */
+.titulo-contacto {
+    text-align: center;
+    color: #0B7A75;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Contenedor principal del Grid */
+/* Sección de contacto */
+.contacto-section {
+    padding-bottom: 50px;
+}
+
+.titulo-contacto {
+    text-align: center;
+    color: #0B7A75;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0 10%;
+    align-items: start; /* Esto hace que todo se alinee arriba */
+}
+
+/* Contenedor agrupador a la izquierda */
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-info-caja {
+    background-color: #f4f7f6;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 6px solid #0B7A75;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+}
+
+.contacto-form input, .contacto-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.btn-enviar {
+    background-color: #0B7A75;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-whatsapp {
+    display: block;
+    background: #25d366;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.redes-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-red {
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+/* Alineación general del grid */
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0 10%;
+    align-items: start;
+}
+
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo para los botones de redes */
+.redes-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Para que no se desborden si la pantalla es pequeña */
+}
+
+.btn-red {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn-red:hover {
+    background: #e2e2e2;
+}
+
+/* Estilo para tu imagen de Facebook */
+.icono-red {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Resto de estilos (asegúrate de mantener tus estilos de .contacto-form y .btn-whatsapp) */
+.btn-whatsapp {
+    display: block;
+    background: #25d366;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 5px;
+}
